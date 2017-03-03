@@ -84,6 +84,23 @@ config block to restrict access to the object's properties so they can only be s
 applyXxx(newvValue, oldValue) to apply CHECK
 
 
+##Grids
+Ext.grid.Panel is simply a component that displays data contained in a Ext.data.Store. Ext.data.Store can be thought of as a collection of records, or Ext.data.Model instances.
+
+->  separating concerns: Ext.grid.Panel is only concerned with displaying the data, while Ext.data.Store takes care of fetching and saving the data using Ext.data.proxy.Proxy.
+
+ A renderer is a function that modifies the underlying value and returns a new value for display. Some of the most common renderers are included in Ext.util.Format.
+ 
+All Grid panels have an Ext.selection.Model, which determines how data is selected. 
+ 
+Cell editing allows you to edit the data in a Grid panel one cell at a time. The first step in implementing cell editing is to configure an editor for each Ext.grid.column.Column in your Grid Panel that should be editable. , to enable editing we need to configure the Ext.grid.Panel with a Ext.grid.plugin.CellEditing.
+
+Row editing
+
+Paging
+
+In 6.2.0, components embedded in grids have access to the ViewModel and all the data within it.
+
 
 
 
