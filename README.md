@@ -102,10 +102,17 @@ Paging
 In 6.2.0, components embedded in grids have access to the ViewModel and all the data within it.
 
 
+**Panel VS Container**
 
+**Flex**
+Flex may be applied to child items of a box layout (Ext.layout.container.VBox or Ext.layout.container.HBox). Each child item with a flex property will fill space (horizontally in hbox, vertically in vbox) according to that item's relative flex value compared to the sum of all items with a flex value specified.
 
+**vbox VS hbox**
+hbox; in a row; vbox: in a column.
 
+**Combobox**
 
+forceSelection: true
 
 
 
