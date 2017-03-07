@@ -103,6 +103,7 @@ In 6.2.0, components embedded in grids have access to the ViewModel and all the 
 
 
 **Panel VS Container**
+RowWidegt only work in panel
 
 **Flex**
 Flex may be applied to child items of a box layout (Ext.layout.container.VBox or Ext.layout.container.HBox). Each child item with a flex property will fill space (horizontally in hbox, vertically in vbox) according to that item's relative flex value compared to the sum of all items with a flex value specified.
@@ -114,7 +115,8 @@ hbox; in a row; vbox: in a column.
 
 forceSelection: true
 
-
+**AJAX vs JSONP**
+JSONP can only make GET request as using <script>
 
 
 
