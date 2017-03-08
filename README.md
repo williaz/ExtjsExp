@@ -118,7 +118,11 @@ forceSelection: true
 **AJAX vs JSONP**
 JSONP can only make GET request as using <script>
 
+##ViewModel
 
+A ViewModel is a class that manages a data object. It then allows those interested in this data to bind to it and be notified when it changes. 
+*bound data will always take priority over static configuration values but may be delayed in order to fetch that data.
+*all of the children of the component with a viewModel also have access to their container's data.
 
 
 
