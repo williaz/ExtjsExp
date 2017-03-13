@@ -121,7 +121,7 @@ JSONP can only make GET request as using \<script>
 **Margin**
 margin: '0 0 0 5', clock, Top Right Bottom Left
 
-##ViewModel
+## ViewModel
 
 A ViewModel is a class that manages a data object. It then allows those interested in this data to bind to it and be notified when it changes. 
 *bound data will always take priority over static configuration values but may be delayed in order to fetch that data.
@@ -135,4 +135,29 @@ fireEvent(eventName, args): Fires the specified event with the passed parameters
 ## Grid
 Selection Model;  a mechanism for selecting some part of the data in the grid.
 Selection: selected model;  getSelection(): Returns an array of the currently selected records.
+
+## [Component](http://docs.sencha.com/extjs/6.2.0/modern/Ext.Component.html#cfg-reference)
+4 main: Navigation, Store-bound, Form, and General.
+To show this panel on the screen now we can simply add it to the global Viewport: Ext.Viewport.add(panel);
+[]xtype is a convenient way of creating Components without having to go through the process of using Ext.create and specifying the full class name
+
+**Configs:** You can pass in any number of configuration options when you instantiate the Component, and modify any of them at any point later.
+[]id: The unique id of this component instance.
+[]record: A model instance which updates the Component's html based on it's tpl. Similar to the data configuration, but tied to to a record to make allow dynamic updates.
+[]reference: Specifies a name for this component inside its component hierarchy. This name must be unique within its view or its Ext.app.ViewController. 
+[]x/y: The x/y position at which to position this component.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
