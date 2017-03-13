@@ -118,12 +118,21 @@ forceSelection: true
 **AJAX vs JSONP**
 JSONP can only make GET request as using <script>
 
+**Margin**
+margin: '0 0 0 5', clock, Top Right Bottom Left
+
 ##ViewModel
 
 A ViewModel is a class that manages a data object. It then allows those interested in this data to bind to it and be notified when it changes. 
 *bound data will always take priority over static configuration values but may be delayed in order to fetch that data.
 *all of the children of the component with a viewModel also have access to their container's data.
 
+## [ViewController](http://docs.sencha.com/extjs/6.2.0/modern/Ext.app.ViewController.html)
+Id: use id when dispatching.
+fireEvent(eventName, args): Fires the specified event with the passed parameters
 
 
+## Grid
+Selection Model;  a mechanism for selecting some part of the data in the grid.
+Selection: selected model;  getSelection(): Returns an array of the currently selected records.
 
