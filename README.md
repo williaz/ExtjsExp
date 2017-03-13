@@ -116,7 +116,7 @@ hbox; in a row; vbox: in a column.
 forceSelection: true
 
 **AJAX vs JSONP**
-JSONP can only make GET request as using <script>
+JSONP can only make GET request as using \<script>
 
 **Margin**
 margin: '0 0 0 5', clock, Top Right Bottom Left
