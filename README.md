@@ -1,7 +1,7 @@
 # ExtjsExp
 Ext JS 6.2.0
 
-##Class:
+## Class:
 
 Declaration: Ext.define(className, members, onClassCreated);
 *className: The class name
@@ -13,12 +13,12 @@ Static members can be defined using the statics config
 You can use Ext.getDisplayName() to get the display name of any method. This is especially useful for throwing errors that have the class name and method name in their description
 When an error is thrown in any method of any class defined using Ext.define(), you should see the method and class names in the call stack if you are using a WebKit based browser 
 
-##Layout:
+## Layout:
 
 The layout system handles the sizing and positioning of every Component in your application.
 Every container has a layout that manages the sizing and positioning of its child Components. 
 
-##Component:
+## Component:
 
 An Ext JS application's UI is made up of one or many widgets called Components. 
 All Components are subclasses of the Ext.Component class which allows them to participate in automated lifecycle management including instantiation, rendering, sizing and positioning, and destruction.
@@ -35,7 +35,7 @@ It is recommended to extend the nearest base class to the functionality required
 Ext.Base is the building block of all Ext JS classes, and the prototype and static members of this class are inherited by all other classes.
 Ext JS uses the Template method pattern to delegate to subclasses, behavior which is specific only to that subclass.
 
-##Data Package:
+## Data Package:
 
 The data package is what loads and saves all of the data in your application. 1. Ext.data.Model; 2. Store; 3. Ext.proxy.Proxy
 1.  A Model represents an entity in an application. Field, Proxies, Validation, Association.
@@ -49,13 +49,13 @@ Stores are able to perform sorting, filtering and grouping locally and remotely.
 Models can be linked together with the Associations API.  reference: 'User',
 Validators are defined as an object keyed by field name which map to the rules that define a valid field. These rules are expressed as a validator object config or an array of these configs.
 
-##Gestures:
+## Gestures:
 
 In addition to standard DOM events, Elements also fire synthesized "gesture" events. From a browser's perspective, there are 3 primary types of pointer, touch, and mouse events - start, move, and end.
 
 ...
 
-##Events:
+## Events:
 
 We can pass listeners to the component when the class was instantiated. Or, if we already have an instance, we can add listeners using the .on() function.
 .un()
@@ -65,7 +65,7 @@ buffer: 2000,*(only invoked once every 2 seconds)
 Firing your own events is done by calling fireEvent with an event name.
 Use Ext.defer to delay the function that fires custom event
 
-##OOP in ExtJS
+## OOP in ExtJS
 
 Ext.define() to define a new class. In Ext JS, all classes are children of a common base class unless explicitly specified. This base class is Ext.Base.
 
@@ -84,7 +84,7 @@ config block to restrict access to the object's properties so they can only be s
 applyXxx(newvValue, oldValue) to apply CHECK
 
 
-##Grids
+## Grids
 Ext.grid.Panel is simply a component that displays data contained in a Ext.data.Store. Ext.data.Store can be thought of as a collection of records, or Ext.data.Model instances.
 
 ->  separating concerns: Ext.grid.Panel is only concerned with displaying the data, while Ext.data.Store takes care of fetching and saving the data using Ext.data.proxy.Proxy.
@@ -133,25 +133,32 @@ fireEvent(eventName, args): Fires the specified event with the passed parameters
 
 
 ## Grid
-Selection Model;  a mechanism for selecting some part of the data in the grid.
-Selection: selected model;  getSelection(): Returns an array of the currently selected records.
+- [ ] Selection Model;  a mechanism for selecting some part of the data in the grid.
+
+- [ ] Selection: selected model;  getSelection(): Returns an array of the currently selected records.
+
+- [ ] rederer: change the way in which data is displayed. 
+
+- [ ] formatter: 
 
 ## [Component](http://docs.sencha.com/extjs/6.2.0/modern/Ext.Component.html#cfg-reference)
 4 main: Navigation, Store-bound, Form, and General.
 
 To show this panel on the screen now we can simply add it to the global Viewport: Ext.Viewport.add(panel);
 
-[ ]xtype is a convenient way of creating Components without having to go through the process of using Ext.create and specifying the full class name
+- [ ] xtype is a convenient way of creating Components without having to go through the process of using Ext.create and specifying the full class name
+
+- [ ] 
 
 **Configs:** You can pass in any number of configuration options when you instantiate the Component, and modify any of them at any point later.
 
-[ ]id: The unique id of this component instance.
+- [ ] id: The unique id of this component instance.
 
-[ ]record: A model instance which updates the Component's html based on it's tpl. Similar to the data configuration, but tied to to a record to make allow dynamic updates.
+- [ ] record: A model instance which updates the Component's html based on it's tpl. Similar to the data configuration, but tied to to a record to make allow dynamic updates.
 
-[ ]reference: Specifies a name for this component inside its component hierarchy. This name must be unique within its view or its Ext.app.ViewController. 
+- [ ] reference: Specifies a name for this component inside its component hierarchy. This name must be unique within its view or its Ext.app.ViewController. 
 
-[ ]x/y: The x/y position at which to position this component.
+- [ ] x/y: The x/y position at which to position this component.
 
 
 
