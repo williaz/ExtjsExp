@@ -146,7 +146,7 @@ fireEvent(eventName, args): Fires the specified event with the passed parameters
 
 To show this panel on the screen now we can simply add it to the global Viewport: Ext.Viewport.add(panel);
 
-- [ ] xtype is a convenient way of creating Components without having to go through the process of using Ext.create and specifying the full class name
+- [x] xtype is a convenient way of creating Components without having to go through the process of using Ext.create and specifying the full class name
 
 - [ ] 
 
@@ -156,11 +156,37 @@ To show this panel on the screen now we can simply add it to the global Viewport
 
 - [ ] record: A model instance which updates the Component's html based on it's tpl. Similar to the data configuration, but tied to to a record to make allow dynamic updates.
 
-- [ ] reference: Specifies a name for this component inside its component hierarchy. This name must be unique within its view or its Ext.app.ViewController. 
+- [x] reference: Specifies a name for this component inside its component hierarchy. This name must be unique within its view or its Ext.app.ViewController. 
 
 - [ ] x/y: The x/y position at which to position this component.
 
+## [Request](http://docs.sencha.com/extjs/6.2.0/modern/Ext.data.Request.html)
+Ajax, JSONP
 
+- [x] url(Str)
+
+- [x] method(Str): GET(def)/POST/PUT/DELETE
+
+- [x] headers(Obj)
+
+- [x] params(Obj)
+
+- [x] jsonData(Obj)
+
+- [ ] xmlData(Obj)
+
+- [ ] timeout; 30000(30sec) def
+
+- [ ] disableCaching(Boolean)
+
+- [ ] username(Str)
+
+- [ ] passsword(Str)
+
+## [Store](http://docs.sencha.com/extjs/6.2.0/modern/Ext.data.Store.html)
+Proxy, [JSON Reader](http://docs.sencha.com/extjs/6.2.0/modern/Ext.data.reader.Json.html)
+
+The Store class encapsulates a client side cache of Ext.data.Model objects. Stores load data via a Ext.data.proxy.Proxy, and also provide functions for sorting, filtering and querying the Ext.data.Model instances contained within it.
 
 
 
