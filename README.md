@@ -189,6 +189,15 @@ Proxy, [JSON Reader](http://docs.sencha.com/extjs/6.2.0/modern/Ext.data.reader.J
 The Store class encapsulates a client side cache of Ext.data.Model objects. Stores load data via a Ext.data.proxy.Proxy, and also provide functions for sorting, filtering and querying the Ext.data.Model instances contained within it.
 
 
+## [Button](http://docs.sencha.com/extjs/6.2.0/modern/Ext.Button.html)
+ There are various different styles of Button you can create by using the icon, iconCls, iconAlign, ui, and text configurations.
+
+- [ ] icon: url to the icon image
+- [x] iconCls: specify the font icon
+- [ ] badgeText: upper right conner
+- [ ] ui: normal/back/forward/round action/decline/confirm(-round)
+- [x] disabled
+
 
 
 
