@@ -101,6 +101,17 @@ Paging
 
 In 6.2.0, components embedded in grids have access to the ViewModel and all the data within it.
 
+- [ ] Selection Model;  a mechanism for selecting some part of the data in the grid.
+- [ ] Selection: selected model;  getSelection(): Returns an array of the currently selected records.
+- [ ] rederer: change the way in which data is displayed. 
+- [ ] formatter:
+
+##Summary: 
+This feature is used to place a summary row at the bottom of the grid.
+- [ ] summaryRenderer: display a summary value for this column,  function(value, summaryData, dataIndex) 
+- [ ] summaryType: built-in: count, sum, min, max, average
+
+
 
 **Panel VS Container**
 RowWidegt only work in panel
@@ -130,16 +141,7 @@ A ViewModel is a class that manages a data object. It then allows those interest
 ## [ViewController](http://docs.sencha.com/extjs/6.2.0/modern/Ext.app.ViewController.html)
 Id: use id when dispatching.
 fireEvent(eventName, args): Fires the specified event with the passed parameters
-
-
-## Grid
-- [ ] Selection Model;  a mechanism for selecting some part of the data in the grid.
-
-- [ ] Selection: selected model;  getSelection(): Returns an array of the currently selected records.
-
-- [ ] rederer: change the way in which data is displayed. 
-
-- [ ] formatter: 
+ 
 
 ## [Component](http://docs.sencha.com/extjs/6.2.0/modern/Ext.Component.html#cfg-reference)
 4 main: Navigation, Store-bound, Form, and General.
