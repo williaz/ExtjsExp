@@ -185,6 +185,12 @@ Ajax, JSONP
 
 - [ ] passsword(Str)
 
+- [ ] defaultXhrHeader: def- 'XMLHttpRequest'
+
+- [ ] useDefaultXhrHeader: def - true 
+
+- [ ] cors: def-false, True to enable CORS support on the XHR object. use XDomainRequest instead of XMLHttpRequest  for browser >=IE8
+
 ## [Store](http://docs.sencha.com/extjs/6.2.0/modern/Ext.data.Store.html)
 Proxy, [JSON Reader](http://docs.sencha.com/extjs/6.2.0/modern/Ext.data.reader.Json.html)
 
