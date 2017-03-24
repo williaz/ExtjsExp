@@ -107,18 +107,18 @@ In 6.2.0, components embedded in grids have access to the ViewModel and all the 
 - [ ] formatter:
 
 
-## [Selection](http://docs.sencha.com/extjs/6.2.0/classic/Ext.selection.Model.html)
+### [Selection](http://docs.sencha.com/extjs/6.2.0/classic/Ext.selection.Model.html)
 
 - [ ] deselectAll() : deselect all record in the view
 
 
 
-## Summary: 
+### Summary: 
 This feature is used to place a summary row at the bottom of the grid.
 - [ ] summaryRenderer: display a summary value for this column,  function(value, summaryData, dataIndex) 
 - [ ] summaryType: built-in: count, sum, min, max, average
 
-## [gridfilters](http://docs.sencha.com/extjs/6.2.0/classic/Ext.grid.filters.Filters.html)
+### [gridfilters](http://docs.sencha.com/extjs/6.2.0/classic/Ext.grid.filters.Filters.html)
 
 - plugins: 'gridfilters'
 - [x] filter: itemDefaults
