@@ -118,6 +118,10 @@ This feature is used to place a summary row at the bottom of the grid.
 - [ ] summaryRenderer: display a summary value for this column,  function(value, summaryData, dataIndex) 
 - [ ] summaryType: built-in: count, sum, min, max, average
 
+## [gridfilters](http://docs.sencha.com/extjs/6.2.0/classic/Ext.grid.filters.Filters.html)
+
+- plugins: 'gridfilters'
+- [x] filter: itemDefaults
 
 
 **Panel VS Container**
