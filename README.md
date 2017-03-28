@@ -150,8 +150,11 @@ A ViewModel is a class that manages a data object. It then allows those interest
 *all of the children of the component with a viewModel also have access to their container's data.
 
 ## [ViewController](http://docs.sencha.com/extjs/6.2.0/modern/Ext.app.ViewController.html)
-Id: use id when dispatching.
-fireEvent(eventName, args): Fires the specified event with the passed parameters
+- [ ] Id: use id when dispatching.
+
+- [ ] fireEvent(eventName, args): Fires the specified event with the passed parameters
+
+- [ ] fireViewEvent(eventName): Fires an event on the view. view.on/addListener(...)
  
 
 ## [Component](http://docs.sencha.com/extjs/6.2.0/modern/Ext.Component.html#cfg-reference)
