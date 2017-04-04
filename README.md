@@ -1,6 +1,12 @@
 # ExtjsExp
 Ext JS 6.2.0
 
+## Name Convention:
+
+- ClassName
+- aliasname
+- configName
+
 ## Class:
 
 Declaration: Ext.define(className, members, onClassCreated);
