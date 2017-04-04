@@ -110,9 +110,11 @@ In 6.2.0, components embedded in grids have access to the ViewModel and all the 
 
 - [ ] Selection Model;  a mechanism for selecting some part of the data in the grid.
 - [ ] Selection: selected model;  getSelection(): Returns an array of the currently selected records.
-- [ ] rederer: change the way in which data is displayed. 
 - [ ] formatter:
 
+### [Cell](http://docs.sencha.com/extjs/6.2.0/modern/Ext.grid.cell.Cell.html)
+
+- [x] renderer:  transform data before it is rendered. return HTML string
 
 ### [Selection](http://docs.sencha.com/extjs/6.2.0/classic/Ext.selection.Model.html)
 
