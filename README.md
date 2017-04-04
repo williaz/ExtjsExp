@@ -98,7 +98,8 @@ Ext.grid.Panel is simply a component that displays data contained in a Ext.data.
  A renderer is a function that modifies the underlying value and returns a new value for display. Some of the most common renderers are included in Ext.util.Format.
  
 All Grid panels have an Ext.selection.Model, which determines how data is selected. 
- 
+
+- [x] columnLines: def- false
 Cell editing allows you to edit the data in a Grid panel one cell at a time. The first step in implementing cell editing is to configure an editor for each Ext.grid.column.Column in your Grid Panel that should be editable. , to enable editing we need to configure the Ext.grid.Panel with a Ext.grid.plugin.CellEditing.
 
 Row editing
