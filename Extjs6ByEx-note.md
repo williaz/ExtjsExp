@@ -58,6 +58,52 @@ Ext.select('div.row[title = bar] : first'); // selection chaining: class-row, at
 
 ### Layout
 - position and size, def- auto
+- updateLayout(): reposition children for container, call during the resize and when you add or remove children\
+- suspendLayout(): for the whole framework, use Ext.suspendLayouts(), Ext.resumeLayouts(true)
+
+#### absoulte
+- absolute positioning with x, y
+- can overlap
+
+#### accordion
+- only one child panel at a time with the built-in support to collapse and expand
+
+#### anchor
+- specify 'anchor' for the size of the child relative to the container
+
+#### border
+- specify the position of the child componnents in terms of regions
+- center/north/south/west/east
+- must always have one child with region: 'center'
+
+#### card
+- only one child will be visible and fill almost the entire container
+- used in wizard
+
+#### center
+- place child in the center
+
+#### column
+- 'column': specify 'columnWidth' which sum should be 1. or 'width' with fixed value 
+
+#### fit
+- fits the container's dimension
+
+#### hbox
+- column with stretch height
+- horizontally
+
+#### table
+- specify 'columns'/'rows'
+- rowspan/colspan
+
+#### vbox
+- vertically
+
+
+
+
+
 
 
 
