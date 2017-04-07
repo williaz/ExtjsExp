@@ -1,7 +1,7 @@
 The list of classes required for this class has to be specified in the requires section, there will be loaded first before instantiating this class.
 
-## Core
-### Class System
+## 1. Core
+### 1.1 Class System
 - Ext: a global singleton object that encapsulates all in the Sencha lib
 
 - Ext.app.Application: a class that represents the entire application, creating a global variable with its name. launch()
@@ -27,7 +27,7 @@ accessed through: define(); create(); widget(); getClass(); getClassName()
 
 - Ext.Loader: for dynamic dependency loading, use with Ext.require() and Ext.exclude(). -> the required classes are loaded asynchronously.
 
-### Event
+### 1.2 Event
 - 'listeners' config add listeners to events when the instance is created
 - on() add events after the instance is created
 - un() to remove
@@ -36,7 +36,7 @@ accessed through: define(); create(); widget(); getClass(); getClassName()
 var div = Ext.get('mydiv');
 div.on(...);
 ```
-### Access DOM
+### 1.3 Access DOM
 - Ext.get(): takes the ID of a DOM node, and return Ext.dom.Element
 - Ext.query(): selects the child nodes of a given root bassed on the passed CSS selector, return HTMLElement[]/Ext.dom.Element[]
 - Ext.select(): returns a single object of type CompositeElement using **CSS/XPath selector**, use',' in selector to multiple search
@@ -46,17 +46,17 @@ Ext.select('div.row[title = bar] : first'); // selection chaining: class-row, at
 ```
 - Ext.ComponentQuery: .query(): xtype-'button'; ID-'#foo' or nested selectors
 
-### Component
+### 1.4 Component
 - Ext.component: base class of all the built-in components. 
 - xtype: use for lazy loading, not instantiate immediately
 
-### Container
+### 1.5 ontainer
 - Ext.container.Container: base class, capable of holding other components
 - Ext.toolbar
 - Ext.panel.Panel
 - Ext.Editor
 
-### Layout
+### 1.6 Layout
 - position and size, def- auto
 - updateLayout(): reposition children for container, call during the resize and when you add or remove children\
 - suspendLayout(): for the whole framework, use Ext.suspendLayouts(), Ext.resumeLayouts(true)
@@ -99,6 +99,89 @@ Ext.select('div.row[title = bar] : first'); // selection chaining: class-row, at
 
 #### vbox
 - vertically
+
+## Basic
+
+### Ext.Button
+- handler: click 
+- listeners
+- href: link button
+- menu: menu button
+
+### Ext.MessageBox
+- Ext.Msg
+- singleton of Ext.window.MessageBox
+- alert()
+- confirm(): confirmation message box with  a yes and no button
+- show(): customize 
+```javascript
+Ext.MessageBox.show({
+    title: 'Discard?'
+    icon: Ext.MessageBox.QUESTION
+    msg: 'Are you sure to discard and close?'
+    buttons: Ext.MessageBox.YESNO,
+    fn: function(button) {
+        if ('yes' == button) {}
+        else if ('no' == button) {}
+    }
+});
+```
+
+### Ext.form.Panel
+- fieldDefaults: specify the default config values for all the fields
+- event: 'beforeaction', 'actionfailed', 'actioncomplete', 'validitychange', 'dirtychange'
+
+#### Ext.form.field.Text
+- vtype: validation
+- fieldLabel
+
+#### Ext.form.field.Number
+- number field providing several options
+- value/maxValue/minValue:
+- hideTrigger/keyNavEnabled/mouseWheelEnabled
+
+#### Ext.form.field.ComboBox
+- store:
+- queryMode: 'local'/'remote'
+
+#### Ext.form.HtmlEditor
+
+#### Ext.form.CheckboxGroup
+- use same name for all the items in it
+- columns
+
+#### Ext.form.FieldContainer
+- group a set of related field and attach it to a single label
+
+#### Ext.form.RadioGroup
+- extends CheckboxGroup
+
+### Ext.toolbar.Toolbar
+- def; any child items in it is a button
+- to arrange, use Ext.toolbar.spacer, Ext.toolbar.Separator, Ext.toolbar.Fill: ' ', '|', '->'
+
+
+### Ext.menu.Menu
+- Ext.menu.Item
+
+### Viewport
+- specialized container represents the browser's application view area
+- scrollable: true/false/x/y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
