@@ -100,15 +100,15 @@ Ext.select('div.row[title = bar] : first'); // selection chaining: class-row, at
 #### vbox
 - vertically
 
-## Basic
+## 2. Basic
 
-### Ext.Button
+### 2.1 Ext.Button
 - handler: click 
 - listeners
 - href: link button
 - menu: menu button
 
-### Ext.MessageBox
+### 2.2 Ext.MessageBox
 - Ext.Msg
 - singleton of Ext.window.MessageBox
 - alert()
@@ -127,7 +127,7 @@ Ext.MessageBox.show({
 });
 ```
 
-### Ext.form.Panel
+### 2.3 Ext.form.Panel
 - fieldDefaults: specify the default config values for all the fields
 - event: 'beforeaction', 'actionfailed', 'actioncomplete', 'validitychange', 'dirtychange'
 
@@ -156,21 +156,21 @@ Ext.MessageBox.show({
 #### Ext.form.RadioGroup
 - extends CheckboxGroup
 
-### Ext.toolbar.Toolbar
+### 2.4 Ext.toolbar.Toolbar
 - def; any child items in it is a button
 - to arrange, use Ext.toolbar.spacer, Ext.toolbar.Separator, Ext.toolbar.Fill: ' ', '|', '->'
 
 
-### Ext.menu.Menu
+### 2.5 Ext.menu.Menu
 - Ext.menu.Item
 
-### Viewport
+### 2.6 Viewport
 - specialized container represents the browser's application view area
 - scrollable: true/false/x/y
 
-## Data
+## 3. Data
 
-### Model
+### 3.1 Model
 
 #### Field
 - type: auto, boolean, date, int, number, string
@@ -183,7 +183,7 @@ Ext.MessageBox.show({
 - One-to-One/Many: parent model's field with reference config
 - Many-to-Many: manyToMany in model class
 
-### Store
+### 3.2 Store
 
 - storeId
 
@@ -201,7 +201,7 @@ Ext.MessageBox.show({
 
 *It's often desirable to define the store in the ViewModel itself*
 
-### Proxy
+### 3.3 Proxy
 
 #### Client-side
 - memory
