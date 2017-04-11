@@ -168,10 +168,51 @@ Ext.MessageBox.show({
 - specialized container represents the browser's application view area
 - scrollable: true/false/x/y
 
+## Data
 
+### Model
 
+#### Field
+- type: auto, boolean, date, int, number, string
+- inbuilt convert(), auto doesn't have one; convert: null
 
+#### Validators
+- type: presence, format, length, exclusion/inclusion
 
+#### Relationship
+- One-to-One/Many: parent model's field with reference config
+- Many-to-Many: manyToMany in model class
+
+### Store
+
+- storeId
+
+#### inline data
+- data: []
+
+#### Access
+- Ext.getStore(): Ext.data.StoreManager.lookup()
+- in ViewController: Ext.aap.ViewModel.getStore()
+
+#### Event
+
+- add/ beforeload/ beforesync/ datachanged/ load/ remove/ update
+- listen to the store events ini controller: on()
+
+*It's often desirable to define the store in the ViewModel itself*
+
+### Proxy
+
+#### Client-side
+- memory
+- localstorage: key-value-pair storage in HTML5
+- sessionstorage
+
+#### Server-side
+- Ajax
+- Diesct: Ext.Direct
+- JSONP
+- REST
 
 
 
