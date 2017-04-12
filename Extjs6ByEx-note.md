@@ -197,7 +197,17 @@ Ext.MessageBox.show({
 #### Event
 
 - add/ beforeload/ beforesync/ datachanged/ load/ remove/ update
-- listen to the store events ini controller: on()
+- listen to the store events init controller: on()
+```javascript
+init: function() {
+   ...
+   this.XxxStore.on('update', this.onUpdated, this);
+}
+onUpdated: function(store, record) {
+   if (record.dirty) {...}
+   else {...}
+}
+```
 
 *It's often desirable to define the store in the ViewModel itself*
 
