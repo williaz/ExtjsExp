@@ -232,7 +232,11 @@ The Store class encapsulates a client side cache of Ext.data.Model objects. Stor
 - [ ] ui: normal/back/forward/round action/decline/confirm(-round)
 - [x] disabled
 
-
+## Form
+### submit
+- [x] success: function(form, action) {action.result - decoded json}
+- [x] failure: function(form, action) {action.response.responseText(= status + statusText) - js object; }
+- [x] action.failureType
 
 
 
