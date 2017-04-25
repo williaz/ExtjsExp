@@ -224,6 +224,15 @@ onUpdated: function(store, record) {
 - JSONP
 - REST
 
+## 4. Grid
+- EXT.grid.Grid in modern; Ext.grid.Panel in classic
+- column: width, flex, sortable, renderer
+- plugins: 'gridfilters' : type, itemDefaults
+- cell/row editing
+- grouping
+- pivot grid
+
+
 
 
 
